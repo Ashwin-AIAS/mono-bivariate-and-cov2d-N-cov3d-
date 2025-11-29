@@ -7,7 +7,7 @@ azimuths_deg = np.linspace(0, 360, 360)
 
 # Convert degrees to radians for numpy math functions
 azimuths_rad = np.radians(azimuths_deg)
-
+  
 # Create dummy distances (simulating a circular room with some noise)
 # "10" is the base radius, and we add random noise
 distances = 10 + np.random.normal(0, 0.5, size=len(azimuths_rad))
