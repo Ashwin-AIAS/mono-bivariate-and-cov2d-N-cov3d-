@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # 1. Simulate Sensor Data (Distance over Azimuth)
 # We create 360 azimuth readings (0 to 360 degrees)
-azimuths_deg = np.linspace(0, 360, 360)
+azimuths_deg = np.linspace(0, 360, 360)  
 
 # Convert degrees to radians for numpy math functions
 azimuths_rad = np.radians(azimuths_deg)
