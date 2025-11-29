@@ -10,7 +10,7 @@ azimuths_rad = np.radians(azimuths_deg)
   
 # Create dummy distances (simulating a circular room with some noise)
 # "10" is the base radius, and we add random noise
-distances = 10 + np.random.normal(0, 0.5, size=len(azimuths_rad))
+distances = 10 + np.random.normal(0, 0.5, size=len(azimuths_rad))  
 
 # Let's add a fake rectangular obstacle closer to the sensor between 45 and 90 degrees
 distances[45:90] = 5.0 + np.random.normal(0, 0.1, size=45)
